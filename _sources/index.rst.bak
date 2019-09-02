@@ -1,13 +1,23 @@
-===============================================
-Програмирање у Скречу, приручник за пети разред
-===============================================
+=========================================
+Programiranje u Skrecu - osnovni koncepti
+=========================================
 
-Овај интерактивни приручник ће вам помоћи да савладате основе прогамирања у визуелном програмском језику Скреч. Приручник је прилагођен градиву предмета Информатика и рачунарство за V разред основне школе.
+Ovaj interaktivno prirucnik bice od pomoci u savladavanju osnova programiranja u vizuelnom programskom jeziku Skrec (Scratch).
 
    .. toctree::
       :maxdepth: 2
 
-      Algoritamski-nacin-razmisljanja.rst
+      Scratch.rst
+      Blokovi.rst
+      Izgled.rst
+      Zvuk.rst
+      Kretanje.rst
+      Crtanje.rst
+      Procedure.rst
+      Promenljive.rst
+      Ponavljanje.rst
+      Grananje.rst
+      Liste.rst
       
 
 

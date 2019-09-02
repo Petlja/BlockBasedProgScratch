@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Кретање &#8212; Runestone Interactive Overview</title>
+    <title>Kretanje &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -146,7 +146,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="???????????? ? ??????, ????????? ?? ???? ??????" href="index.html" />
+    <link rel="next" title="Crtanje" href="Crtanje.html" />
+    <link rel="prev" title="Zvuk" href="Zvuk.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -213,52 +214,46 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="id1">
-<h1>Кретање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Сада, када познајеш радно окружење Скреча, умеш да креираш ликове и одредиш њихов положај на позорници, потребно је да научиш кака да их покрећеш користећи наредбе (блокове) из категорије <strong>Кретање</strong>. Употребљавајући ове блокове бићеш у ситуацији да направиш једноставне игрице и анимације.</p>
-<p>Разликујемо три врсте блокова намењих кретању ликова:</p>
+  <div class="section" id="kretanje">
+<h1>Kretanje<a class="headerlink" href="#kretanje" title="Permalink to this headline">¶</a></h1>
+<p>Već poznaješ radno okruženje Skreča, umeš da kreiraš likove i odrediš njihov položaj na pozornici. Pravi je trenutak da naučiš da ih pokrećeš koristeći naredbe (blokove) iz kategorije <strong>Kretanje (Move)</strong>. Upotrebljavajući ove blokove bićeš u situaciji da napraviš jednostavne igrice i animacije.</p>
+<p>Razlikujemo tri vrste blokova namenjenih kretanju likova:</p>
 <ul class="simple">
-<li><p>Блокове за апсолутно кретање</p></li>
-<li><p>Блокове за релативно кретање</p></li>
-<li><p>Остале блокове за кретање</p></li>
+<li><p>Blokove za apsolutno kretanje</p></li>
+<li><p>Blokove za relativno kretanje</p></li>
+<li><p>Ostale blokove za kretanje</p></li>
 </ul>
-<div class="section" id="id2">
-<h2>Блокови за апсолутно кретање<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>У категорији <strong>Кретање</strong>, на располагању имаш 4 блока која омогућавају апсолутно кретање ликова.</p>
-<a class="reference internal image-reference" href="_images/AKBlokovi.png"><img alt="_images/AKBlokovi.png" class="align-center" src="_images/AKBlokovi.png" style="width: 840px;" /></a>
-<p>Употребљаваћеш их у ситуацијама када буде потребно да програмираш ликове тако да се крећу до <strong>тачно одређеног места (тачке) на позорници</strong>.</p>
+<div class="section" id="blokovi-za-apsolutno-kretanje">
+<h2>Blokovi za apsolutno kretanje<a class="headerlink" href="#blokovi-za-apsolutno-kretanje" title="Permalink to this headline">¶</a></h2>
+<p>U kategoriji <strong>Kretanje (Move)</strong>, na raspolaganju imaš 4 bloka koja omogućavaju apsolutno kretanje likova.</p>
+<img alt="_images/AKBlokovi.png" class="align-center" src="_images/AKBlokovi.png" />
+<p>Upotrebljavaćeš ih u situacijama kada bude potrebno da programiraš likove tako da se kreću do <strong>tačno određenog mesta (tačke) na pozornici</strong>.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>Појурила мачка миша…</strong></p>
-<p>Мачка се налази у центру позорнице, а миш у тачки <strong>(x:150 y:100)</strong>.</p>
-<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 400px;" /></a>
-<p>Подсећамо те да је позорница правоугаони простор ширине 480 и висине 360 корака (пиксела). Центар позорнице налази се у тачки <strong>(x:0 y:0)</strong>.</p>
+<p><strong>Pojurila mačka miša…</strong></p>
+<p>Mačka se nalazi u centru pozornice, a miš u tački <strong>(x:150 y:100)</strong>.</p>
+<a class="reference internal image-reference" href="_images/MM1.png"><img alt="_images/MM1.png" class="align-center" src="_images/MM1.png" style="width: 400px;" /></a>
+<p>Podsećamo te da je pozornica pravougaoni prostor širine 480 i visine 360 koraka (piksela). Centar pozornice nalazi se u tački <strong>(x:0 y:0)</strong>.</p>
 
     </p></div></div>
-<p>Ако желиш да мачка улови миша довољно је употребиш блок <img alt="AK1" src="_images/AK1.png" />.</p>
-<blockquote>
-<div></div></blockquote>
-<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 500px;" /></a>
-<p>Ако желиш да лов траје, употреби блок <img alt="AK2" src="_images/AK2.png" />. Тиме обезбеђујеш да мачка клизи једну секунду од тачке <strong>(x:0 y:0)</strong> до тачке <strong>(x:150 y:100)</strong>.</p>
-<blockquote>
-<div></div></blockquote>
-<p>Употребом блокова <img alt="AK3" src="_images/AK3.png" /> и <img alt="AK4" src="_images/AK4.png" /> можеш да симулираш прикрадање мачке мишу:</p>
-<blockquote>
-<div></div></blockquote>
-<a class="reference internal image-reference" href="_images/MM34a.png"><img alt="_images/MM34a.png" class="align-center" src="_images/MM34a.png" style="width: 1000px;" /></a>
-<p>Тачку у којој се лик тренутно налази (тренутну вредност <strong>x:</strong> и <strong>y:</strong>) увек можеш да видиш испод позорнице, у оквиру листе ликова.</p>
-<a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
+<p>Ako želiš da mačka ulovi miša dovoljno je upotrebiš blok <img alt="AK1" src="_images/AK1.png" />.</p>
+<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 400px;" /></a>
+<p>Ako želiš da lov traje, upotrebi blok <img alt="AK2" src="_images/AK2.png" />. Time obezbeđuješ da mačka klizi jednu sekundu od tačke <strong>(x:0 y:0)</strong> do tačke <strong>(x:150 y:100)</strong>.</p>
+<p>Upotrebom blokova <img alt="AK3" src="_images/AK3.png" /> i <img alt="AK4" src="_images/AK4.png" /> možeš da simuliraš prikradanje mačke mišu:</p>
+<a class="reference internal image-reference" href="_images/MM34a.png"><img alt="_images/MM34a.png" class="align-center" src="_images/MM34a.png" style="width: 800px;" /></a>
+<p>Tačku u kojoj se lik trenutno nalazi (trenutnu vrednost <strong>x:</strong> i <strong>y:</strong>) uvek možeš da vidiš ispod pozornice, u okviru liste likova.</p>
+<img alt="_images/XY.png" class="align-center" src="_images/XY.png" />
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="AKZadatak1">
-            <p>Q-150: Анализирај положај мишева на слици и означи програм који ће омогућити мачки да “улови” све мишеве.</p>
-<a class="reference internal image-reference" href="_images/AKZ1.png"><img alt="_images/AKZ1.png" class="align-center" src="_images/AKZ1.png" style="width: 870px;" /></a>
+            <p>Q-358: Analiziraj položaj miševa na slici i označi program koji će omogućiti mački da “ulovi” sve miševe.</p>
+<a class="reference internal image-reference" href="_images/AKZ1.png"><img alt="_images/AKZ1.png" class="align-center" src="_images/AKZ1.png" style="width: 700px;" /></a>
 
-            <li data-component="answer" data-correct id="AKZadatak1_opt_a">Програм А</li><li data-component="feedback" id="AKZadatak1_opt_a">Браво! Мачка је "ухватила" све мишеве!</li>
+            <li data-component="answer" data-correct id="AKZadatak1_opt_a">Program A</li><li data-component="feedback" id="AKZadatak1_opt_a">Bravo! Mačka je "uhvatila" sve miševe!</li>
             
-            <li data-component="answer"  id="AKZadatak1_opt_b">Програм B</li><li data-component="feedback" id="AKZadatak1_opt_b">Хм.. Саветујемо ти да проучиш лекцију Положај лика на позорници.</li>
+            <li data-component="answer"  id="AKZadatak1_opt_b">Program B</li><li data-component="feedback" id="AKZadatak1_opt_b">Hm.. Savetujemo ti da proučiš lekciju Položaj lika na pozornici.</li>
             
 
             </ul>
@@ -267,34 +262,30 @@
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><img alt="Vazno" src="_images/Vazno.png" />   <strong>Дакле, употребом блокова за апсолутно кретање саопштаваш лику тачно место на позорници на које треба да стигне.</strong></p>
-<blockquote>
-<div></div></blockquote>
+<p><img alt="Vazno" src="_images/Vazno.png" />   <strong>Dakle, upotrebom blokova za apsolutno kretanje saopštavaš liku tačno mesto na pozornici na koje treba da stigne.</strong></p>
 
     </p></div></div>
 </div>
-<div class="section" id="id3">
-<h2>Блокови за релативно кретање<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Релативно кретање није одређено местом у које лик треба да стигне, већ тренутним положајем лика.</p>
-<p>У категорији <strong>Кретање</strong>, на располагању имаш неколико блокова која омогућавају релативно кретање.</p>
-<a class="reference internal image-reference" href="_images/RKBlokovi.png"><img alt="_images/RKBlokovi.png" class="align-center" src="_images/RKBlokovi.png" style="width: 900px;" /></a>
-<p>У примеру у коме је мачка јурила миша знали смо тачан положај миша (тачку у којој се налази). Много су чешће ситуације у којима не знамо тачан положај ликова. У тим случајевима ликове покрећемо коришћењем блокова за релативно кретање.</p>
-<p>Код релативног кретања јако је важно да усмеримо (окренемо) лик у страну у коју желимо да се креће. То постижемо повлачењем стрелице по кругу блока <img alt="RKS2" src="_images/RKS2.png" />.</p>
+<div class="section" id="blokovi-za-relativno-kretanje">
+<h2>Blokovi za relativno kretanje<a class="headerlink" href="#blokovi-za-relativno-kretanje" title="Permalink to this headline">¶</a></h2>
+<p>Relativno kretanje nije određeno mestom u koje lik treba da stigne, već trenutnim položajem lika.</p>
+<p>U kategoriji <strong>Кretanje</strong>, na raspolaganju imaš nekoliko blokova koja omogućavaju relativno kretanje.</p>
+<img alt="_images/RKBlokovi.png" class="align-center" src="_images/RKBlokovi.png" />
+<p>U primeru u kome je mačka jurila miša znali smo tačan položaj miša (tačku u kojoj se nalazi). Mnogo su češće situacije u kojima ne znamo tačan položaj likova. U tim slučajevima likove pokrećemo korišćenjem blokova za relativno kretanje.</p>
+<p>Кod relativnog kretanja jako je važno da usmerimo (okrenemo) lik u stranu u koju želimo da se kreće. To postižemo povlačenjem strelice po krugu bloka <img alt="RKS2" src="_images/RKS2.png" />.</p>
 <p>Добро је да знаш да у Скречу усмерење ка 0 представља усмерење нагоре, ка 90 удесно, ка 180 надоле, а ка -90 улево.</p>
-<blockquote>
-<div></div></blockquote>
 <a class="reference internal image-reference" href="_images/RKS1.png"><img alt="_images/RKS1.png" class="align-center" src="_images/RKS1.png" style="width: 800px;" /></a>
-<p>Тренутно усмерење лика увек можеш да видиш испод позорнице, у оквиру листе ликова, у пољу <strong>Смер</strong>.</p>
-<a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
+<p>Trenutno usmerenje lika uvek možeš da vidiš ispod pozornice, u okviru liste likova, u polju <strong>Smer</strong>.</p>
+<img alt="_images/XY.png" class="align-center" src="_images/XY.png" />
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="RKZadatak1">
-            <p>Q-151: Анализирај програм на слици и означи усмерење лика, као и његов положај након извршавања програма.</p>
-<a class="reference internal image-reference" href="_images/RKZ1.png"><img alt="_images/RKZ1.png" class="align-center" src="_images/RKZ1.png" style="width: 280px;" /></a>
+            <p>Q-359: Analiziraj program na slici i označi usmerenje lika, kao i njegov položaj nakon izvršavanja programa.</p>
+<img alt="_images/RKZ1.png" class="align-center" src="_images/RKZ1.png" />
 
-            <li data-component="answer"  id="RKZadatak1_opt_a">Смер: 90 (десно) Положај: (x:50 y:-100)</li><li data-component="feedback" id="RKZadatak1_opt_a">Анализирај програм поново. Да ли окретање за 90 степени мења усмерење лика?</li>
+            <li data-component="answer"  id="RKZadatak1_opt_a">Смер: 90 (desno) Položaj: (x:50 y:-100)</li><li data-component="feedback" id="RKZadatak1_opt_a">Analiziraj program ponovo. Da li okretanje za 90 stepeni menja usmerenje lika?</li>
             
-            <li data-component="answer" data-correct id="RKZadatak1_opt_b">Смер: 180 (доле) Положај: (x:50 y:100)</li><li data-component="feedback" id="RKZadatak1_opt_b">Браво! Добро уочаваш кретање лика!</li>
+            <li data-component="answer" data-correct id="RKZadatak1_opt_b">Smer: 180 (dole) Položaj: (x:50 y:100)</li><li data-component="feedback" id="RKZadatak1_opt_b">Bravo! Dobro uočavaš kretanje lika!</li>
             
 
             </ul>
@@ -303,52 +294,36 @@
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><img alt="Vazno" src="_images/Vazno.png" />   <strong>Дакле, употребом блокова за релативно кретање саопштаваш лику где треба да се усмери и креће у односу на његов тренутни положај.</strong></p>
+<p><img alt="Vazno" src="_images/Vazno.png" />   <strong>Dakle, upotrebom blokova za relativno kretanje saopštavaš liku gde treba da se usmeri i kreće u odnosu na njegov trenutni položaj.</strong></p>
 
     </p></div></div>
 </div>
-<div class="section" id="id4">
-<h2>Остали блокови за кретање<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>У категорији <strong>Кретање</strong>, на располагању имаш још 4 блока која омогућавају кретање ликова.</p>
-<a class="reference internal image-reference" href="_images/OKBlokovi.png"><img alt="_images/OKBlokovi.png" class="align-center" src="_images/OKBlokovi.png" style="width: 387px;" /></a>
-<p>Позорница је ограничен простор. Када лик стигне до ивице (каже се и руба) позорнице, природно је да се окрене и наставни кретање у другом правцу или смеру. Такво понашање лика обезбеђујеш коришћењем блока <img alt="OK3" src="_images/OK3.png" />.</p>
-<blockquote>
-<div></div></blockquote>
-<p>Начин на који ће лик наставити кретање зависи од тебе. Ако, у оквиру блока <img alt="OK4a" src="_images/OK4a.png" /> подесиш да се лик окреће на <strong>све стране</strong>, он ће наставнити кретање окренут наглавачке. Ово се неће догодити ако из падајуће листе блока одабереш лево-десно <img alt="OK4b" src="_images/OK4b.png" />.</p>
-<blockquote>
-<div></div></blockquote>
-<a class="reference internal image-reference" href="_images/OKRub12.png"><img alt="_images/OKRub12.png" class="align-center" src="_images/OKRub12.png" style="width: 1000px;" /></a>
-<p>Тренутни начин кретања лика (<strong>На све стране</strong> <img alt="OKSS" src="_images/OKSS.png" />, <strong>Лево/десно</strong> <img alt="OKLD" src="_images/OKLD.png" /> или <strong>Без окретања</strong> <img alt="OKBO" src="_images/OKBO.png" />) увек можеш да видиш испод позорнице, у оквиру листе ликова, кликом у поље <strong>Смер</strong>.</p>
-<blockquote>
-<div></div></blockquote>
+<div class="section" id="ostali-blokovi-za-kretanje">
+<h2>Ostali blokovi za kretanje<a class="headerlink" href="#ostali-blokovi-za-kretanje" title="Permalink to this headline">¶</a></h2>
+<p>U kategoriji <strong>Кretanje</strong>, na raspolaganju imaš još 4 bloka koja omogućavaju kretanje likova.</p>
+<img alt="_images/OKBlokovi.png" class="align-center" src="_images/OKBlokovi.png" />
+<p>Pozornica je ograničen prostor. Кada lik stigne do ivice (kaže se i ruba) pozornice, prirodno je da se okrene i nastavni kretanje u drugom pravcu ili smeru. Takvo ponašanje lika obezbeđuješ korišćenjem bloka <img alt="OK3" src="_images/OK3.png" />. Način na koji će lik nastaviti kretanje zavisi od tebe. Ako, u okviru bloka <img alt="OK4a" src="_images/OK4a.png" /> podesiš da se lik okreće na <strong>sve strane</strong>, on će nastavniti kretanje okrenut naglavačke. Ovo se neće dogoditi ako iz padajuće liste bloka odabereš levo-desno <img alt="OK4b" src="_images/OK4b.png" />.</p>
+<a class="reference internal image-reference" href="_images/OKRub12.png"><img alt="_images/OKRub12.png" class="align-center" src="_images/OKRub12.png" style="width: 800px;" /></a>
+<p>Trenutni način kretanja lika uvek možeš da vidiš ispod pozornice, u okviru liste likova, u polju <strong>Smer (Direction)</strong>.</p>
 <a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
-<p>Вратимо се на наше ликове: <img alt="macka" src="_images/macka.png" /> и <img alt="mis" src="_images/mis.png" />.</p>
-<p>Ако не знамо тачан положај миша, а желимо да мачка буде усмерена на њега (окренута ка њему), можемо да употребимо блок <img alt="OK1" src="_images/OK1.png" />. Довољно је да из падајуће листе одаберемо лик Миш <img alt="OK1a" src="_images/OK1a.png" /> и проблем је решен.</p>
-<blockquote>
-<div></div></blockquote>
-<p>Показаћемо ти на примеру како функционишу последња два блока.</p>
+<p>Vratimo se na naše likove: <img alt="macka" src="_images/macka.png" /> i <img alt="mis" src="_images/mis.png" />.</p>
+<p>Ako ne znamo tačan položaj miša, a želimo da mačka bude usmerena na njega (okrenuta ka njemu), možemo da upotrebimo blok <img alt="OK1" src="_images/OK11.png" />. Dovoljno je da iz padajuće liste odaberemo lik Miš <img alt="OK1a" src="_images/OK1a.png" /> i problem je rešen.</p>
+<p>Pokazaćemo ti na primeru kako funkcionišu poslednja dva bloka.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<p><strong>Појурила мачка миша…</strong></p>
-<p>Мачка јури миша, клизећи ка њему. Миш се непрестано окреће и иде ка курсору, који ми померамо по позорници.</p>
-<a class="reference internal image-reference" href="_images/OKPR1.png"><img alt="_images/OKPR1.png" class="align-center" src="_images/OKPR1.png" style="width: 800px;" /></a>
-<p>Изнад сваког од ликова налазе се скрипте које обезбеђују описано понашање.</p>
+<p><strong>Pojurila mačka miša…</strong></p>
+<p>Mačka juri miša, klizeći ka njemu. Miš se neprestano okreće i ide ka kursoru, koji mi pomeramo po pozornici.</p>
+<img alt="_images/OKPR1.png" class="align-center" src="_images/OKPR1.png" />
+<p>Iznad svakog od likova nalaze se skripte koje obezbeđuju opisano ponašanje.</p>
 
     </p></div></div>
-<div class="section" id="id5">
-<h3>Унапреди горњи програм<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<dl class="field-list simple">
-<dt class="field-odd">Задатак</dt>
-<dd class="field-odd"><p>Унапреди горњи програм тако што ћеш додати још један лик - јабуку.
-Нека миш јури јабуку, а мачка миша. Нека се јабука креће ка курсору (којим ми управљамо), миш према јабуци, мачка према мишу.</p>
-</dd>
-</dl>
+<p><img alt="Izazov" src="_images/Izazov.png" /> Unapredi gornji program tako što ćeš dodati još jedan lik - jabuku. Neka miš juri jabuku, a mačka miša. Neka se jabuka kreće ka kursoru (kojim mi upravljamo), miš prema jabuci, mačka prema mišu.</p>
 <a class="reference internal image-reference" href="_images/MMJ.png"><img alt="_images/MMJ.png" class="align-center" src="_images/MMJ.png" style="width: 400px;" /></a>
 
-    <div data-component="reveal" id="сакривањеКретање"   data-showtitle="Упореди решење са нашим" data-hidetitle="Сакриј решење">
-    <p><strong>Могуће решење:</strong></p>
+    <div data-component="reveal" id="sakrivanjeKretanje"   data-showtitle="Uporedi rešenje sa našim" data-hidetitle="Sakrij rešenje">
+    <p><strong>Moguće rešenje:</strong></p>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
     <div id="QgCCzBw6DKU_vid"></div>
@@ -379,14 +354,14 @@
     </div>
     </div>
 </div>
-</div>
 
 
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Претходно поглавље - ???????????? ? ??????, ????????? ?? ???? ??????' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li>
+        <li id="relations-prev" title='Претходно поглавље - Zvuk' data-toggle="tooltip"><a href="Zvuk.html">Претходно поглавље</a></li>
     
+        <li id="relations-next" title='Следеће поглавље - Crtanje' data-toggle="tooltip"><a href="Crtanje.html">Следеће поглавље</a></li>
 </ul>
 
 <script type="text/javascript">
