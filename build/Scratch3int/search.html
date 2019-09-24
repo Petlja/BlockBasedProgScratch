@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Search &#8212; Runestone Interactive Overview</title>
@@ -22,12 +22,9 @@
     <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
-    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="_static/notes.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
-    <link rel="stylesheet" href="_static/ubuntu.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
@@ -84,6 +81,7 @@
     <script type="text/javascript" src="_static/lib/prettify.js"></script>
     <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
     <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
     <script type="text/javascript" src="_static/timedparsons.js"></script>
     <script type="text/javascript" src="_static/poll.js"></script>
     <script type="text/javascript" src="_static/reveal.js"></script>
@@ -92,16 +90,12 @@
     <script type="text/javascript" src="_static/showEval.js"></script>
     <script type="text/javascript" src="_static/tabbedstuff.js"></script>
     <script type="text/javascript" src="_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="_static/webglinteractive.js"></script>
-    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
-    <script type="text/javascript" src="_static/Blob.js"></script>
     <script type="text/javascript" src="_static/karelCorner.js"></script>
     <script type="text/javascript" src="_static/karelRobot.js"></script>
     <script type="text/javascript" src="_static/karelWorld.js"></script>
     <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="_static/karelUI.js"></script>
     <script type="text/javascript" src="_static/karel.js"></script>
-    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
     <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
     <script type="text/javascript" src="_static/notes.js"></script>
     <script type="text/javascript" src="_static/pygamelib-init.js"></script>
@@ -163,24 +157,19 @@
   eBookConfig.course = 'Scratch3int';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
-  eBookConfig.build_info = "unknown";
+  eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'Scratch3int';
   eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
 </script>
 
 <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
 
 
 
@@ -201,12 +190,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://petlja.org/">Petlja</a>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Scratch 3 international</a></li>
+        <li class="active"><a href="./">Block-based programming in Scratch</a></li>
       </ul>
     </div>
   </div>
@@ -232,7 +221,7 @@
     containing fewer words won't appear in the result list.
   </p>
   <form action="" method="get">
-    <input type="text" name="q" value="" />
+    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
     <input type="submit" value="search" />
     <span id="search-progress" style="padding-left: 10px"></span>
   </form>
@@ -245,6 +234,11 @@
       <div class="col-md-12">
 <ul class="pager">
 </ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+    <!-- -->
+<!-- </ul> -->
 
 <script type="text/javascript">
 
@@ -260,7 +254,10 @@
         <div class="text-center">
             <hr>
             <p class="text-muted">
-                <span class="pull-left">&copy; 2017 Petlja (Created using <a href="http://runestoneinteractive.org/">Runestone</a>)</span>
+                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
+                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                  
+                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
             </p>
         </div>
     </div>

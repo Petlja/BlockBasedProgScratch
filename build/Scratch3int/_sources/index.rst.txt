@@ -1,23 +1,23 @@
 =========================================
-Programiranje u Skrecu - osnovni koncepti
+Programming in Scratch - Basic Concepts
 =========================================
 
-Ovaj interaktivno prirucnik bice od pomoci u savladavanju osnova programiranja u vizuelnom programskom jeziku Skrec (Scratch).
+This interactive guide will help you master the basics of programming in the visual programming language Scratch. 
 
    .. toctree::
       :maxdepth: 2
 
       Scratch.rst
-      Blokovi.rst
-      Izgled.rst
-      Zvuk.rst
-      Kretanje.rst
-      Crtanje.rst
-      Procedure.rst
-      Promenljive.rst
-      Ponavljanje.rst
-      Grananje.rst
-      Liste.rst
+      Blocks.rst
+      Looks.rst
+      Sound.rst
+      Motion.rst
+      Drawing.rst
+      Procedures.rst
+      Variables.rst
+      Repetition.rst
+      Branching.rst
+      Lists.rst
       
 
 

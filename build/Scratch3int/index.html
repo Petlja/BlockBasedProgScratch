@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Programiranje u Skrecu - osnovni koncepti &#8212; Runestone Interactive Overview</title>
+    <title>Programming in Scratch - Basic Concepts &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -22,12 +22,9 @@
     <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/video.css" />
-    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
-    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="_static/notes.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
-    <link rel="stylesheet" href="_static/ubuntu.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
@@ -83,6 +80,7 @@
     <script type="text/javascript" src="_static/lib/prettify.js"></script>
     <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
     <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
     <script type="text/javascript" src="_static/timedparsons.js"></script>
     <script type="text/javascript" src="_static/poll.js"></script>
     <script type="text/javascript" src="_static/reveal.js"></script>
@@ -91,16 +89,12 @@
     <script type="text/javascript" src="_static/showEval.js"></script>
     <script type="text/javascript" src="_static/tabbedstuff.js"></script>
     <script type="text/javascript" src="_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="_static/webglinteractive.js"></script>
-    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
-    <script type="text/javascript" src="_static/Blob.js"></script>
     <script type="text/javascript" src="_static/karelCorner.js"></script>
     <script type="text/javascript" src="_static/karelRobot.js"></script>
     <script type="text/javascript" src="_static/karelWorld.js"></script>
     <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="_static/karelUI.js"></script>
     <script type="text/javascript" src="_static/karel.js"></script>
-    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
     <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
     <script type="text/javascript" src="_static/notes.js"></script>
     <script type="text/javascript" src="_static/pygamelib-init.js"></script>
@@ -146,7 +140,7 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Vizuelni programski jezik Skreč" href="Scratch.html" />
+    <link rel="next" title="Visual Programming Language Scratch" href="Scratch.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -160,24 +154,19 @@
   eBookConfig.course = 'Scratch3int';
   eBookConfig.logLevel = 0;
   eBookConfig.loginRequired = false;
-  eBookConfig.build_info = "unknown";
+  eBookConfig.build_info = "";
   eBookConfig.isLoggedIn = false;
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'Scratch3int';
   eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
 </script>
 
 <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
 
 
 
@@ -197,12 +186,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://petlja.org/">Petlja</a>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Scratch 3 international</a></li>
+        <li class="active"><a href="./">Block-based programming in Scratch</a></li>
       </ul>
     </div>
   </div>
@@ -213,61 +202,61 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="programiranje-u-skrecu-osnovni-koncepti">
-<h1>Programiranje u Skrecu - osnovni koncepti<a class="headerlink" href="#programiranje-u-skrecu-osnovni-koncepti" title="Permalink to this headline">¶</a></h1>
-<p>Ovaj interaktivno prirucnik bice od pomoci u savladavanju osnova programiranja u vizuelnom programskom jeziku Skrec (Scratch).</p>
+  <div class="section" id="programming-in-scratch-basic-concepts">
+<h1>Programming in Scratch - Basic Concepts<a class="headerlink" href="#programming-in-scratch-basic-concepts" title="Permalink to this headline">¶</a></h1>
+<p>This interactive guide will help you master the basics of programming in the visual programming language Scratch.</p>
 <blockquote>
 <div><div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Scratch.html">Vizuelni programski jezik Skreč</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Scratch.html#skrec-onlajn-platforma">Skreč onlajn platforma</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Scratch.html#ucesce-u-skrec-onlajn-zajednici">Učešće u Skreč onlajn zajednici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Scratch.html">Visual Programming Language Scratch</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Scratch.html#scratch-online-platform">Scratch Online Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scratch.html#participating-in-the-scratch-online-community">Participating in the Scratch Online Community</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Blokovi.html">Blokovi</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Blokovi.html#vrste-blokova-u-skrecu">Vrste blokova u Skreču</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Blocks.html">Blocks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Blocks.html#types-of-blocks-in-scratch">Types of Blocks in Scratch</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Izgled.html">Izgled</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Izgled.html#razmisljanje-govor-promena-velicine-lika-promena-kostima">Razmišljanje, govor, promena veličine lika, promena kostima</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Looks.html">Looks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Looks.html#thinking-speaking-changing-sizes-changing-costumes">Thinking, speaking, changing sizes, changing costumes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Zvuk.html">Zvuk</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Zvuk.html#oglasavanje-likova">Oglašavanje likova</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Zvuk.html#komponovanje-muzike">Komponovanje muzike</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sound.html">Sound</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#sprite-sounds">Sprite Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#composing-music">Composing music</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Kretanje.html">Kretanje</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kretanje.html#blokovi-za-apsolutno-kretanje">Blokovi za apsolutno kretanje</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kretanje.html#blokovi-za-relativno-kretanje">Blokovi za relativno kretanje</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kretanje.html#ostali-blokovi-za-kretanje">Ostali blokovi za kretanje</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Motion.html">Motion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Motion.html#blocks-for-absolute-motion">Blocks for absolute motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Motion.html#blocks-for-relative-motion">Blocks for relative motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Motion.html#other-motion-blocks">Other motion blocks</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Crtanje.html">Crtanje</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Crtanje.html#crtanje-slobodnom-rukom">Crtanje “slobodnom rukom”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Crtanje.html#upravljanje-kretanjem-lika-pomocu-tastature-i-crtanje">Upravljanje kretanjem lika pomoću tastature i crtanje</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Crtanje.html#apsolutno-kretanje-i-crtanje">Apsolutno kretanje i crtanje</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Crtanje.html#pecat">Pečat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Drawing.html">Drawing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Drawing.html#freehand-drawing">“Freehand” Drawing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Drawing.html#controlling-the-movement-of-the-sprite-by-using-the-keyboard-and-drawing">Controlling the movement of the sprite by using the keyboard and drawing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Drawing.html#absolute-movement-and-drawing">Absolute movement and drawing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Drawing.html#stamp">Stamp</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Procedure.html">Procedure</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Procedure.html#razglasavanje">Razglašavanje</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Procedure.html#definisanje-nove-procedure">Definisanje nove procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Procedures.html">Procedures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Procedures.html#broadcasting">Broadcasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Procedures.html#defining-a-new-procedure">Defining a new procedure</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Promenljive.html">Promenljive</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Promenljive.html#pitaj-i-cekaj">Pitaj i čekaj</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Promenljive.html#kreiranje-promenljivih">Kreiranje promenljivih</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Variables.html">Variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Variables.html#ask-and-wait">Ask and Wait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables.html#creating-variables">Creating Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Ponavljanje.html">Ponavljanje</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Ponavljanje.html#blok-koji-ponavlja-naredbe-tacno-odredeni-broj-puta">Blok koji ponavlja naredbe tačno određeni broj puta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Ponavljanje.html#blok-koji-ponavlja-naredbe-beskonacan-broj-puta">Blok koji ponavlja naredbe beskonačan broj puta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Ponavljanje.html#blok-koji-ponavlja-naredbe-sve-dok-ne-bude-ispunjen-odredeni-uslov">Blok koji ponavlja naredbe sve dok ne bude ispunjen određeni uslov</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Repetition.html">Repetition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Repetition.html#the-block-that-repeats-commands-a-specific-number-of-times">The block that repeats commands a specific number of times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Repetition.html#the-block-that-repeats-commands-an-infinite-number-of-times">The block that repeats commands an infinite number of times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Repetition.html#the-block-that-repeats-commands-until-a-specific-condition-is-fulfilled">The block that repeats commands until a specific condition is fulfilled</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Grananje.html">Grananje</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Liste.html">Liste</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Branching.html">Branching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lists.html">Lists</a></li>
 </ul>
 </div>
 </div></blockquote>
@@ -277,8 +266,15 @@
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-next" title='Следеће поглавље - Vizuelni programski jezik Skreč' data-toggle="tooltip"><a href="Scratch.html">Следеће поглавље</a></li>
+        <li id="relations-next" title='Next chapter - Visual Programming Language Scratch' data-toggle="tooltip"><a href="Scratch.html">Next chapter</a></li>
 </ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Visual Programming Language Scratch' data-toggle="tooltip"><a href="Scratch.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
 
 <script type="text/javascript">
 
@@ -294,7 +290,10 @@
         <div class="text-center">
             <hr>
             <p class="text-muted">
-                <span class="pull-left">&copy; 2017 Petlja (Created using <a href="http://runestoneinteractive.org/">Runestone</a>)</span>
+                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
+                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                  
+                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
             </p>
         </div>
     </div>
