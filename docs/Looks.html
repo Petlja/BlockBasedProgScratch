@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Programming in Scratch - Basic Concepts &#8212; Runestone Interactive Overview</title>
+    <title>Looks &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -140,7 +140,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Visual Programming Language Scratch" href="Scratch.html" />
+    <link rel="next" title="Sound" href="Sound.html" />
+    <link rel="prev" title="Blocks" href="Blocks.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -202,72 +203,115 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="programming-in-scratch-basic-concepts">
-<h1>Programming in Scratch - Basic Concepts<a class="headerlink" href="#programming-in-scratch-basic-concepts" title="Permalink to this headline">¶</a></h1>
-<p>This interactive guide will help you master the basics of programming in the visual programming language Scratch.</p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img alt="Creative Commons License" style="border-width:0"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Block-based programming in Scratch</span>
-by <a xmlns:cc="http://creativecommons.org/ns#" href="Petlja.org" property="cc:attributionName" rel="cc:attributionURL">Petlja.org</a>
-is licensed under the
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<div class="section" id="content">
-<h2>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Scratch.html">Visual Programming Language Scratch</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Scratch.html#scratch-online-platform">Scratch Online Platform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Scratch.html#participating-in-the-scratch-online-community">Participating in the Scratch Online Community</a></li>
+  <div class="section" id="looks">
+<h1>Looks<a class="headerlink" href="#looks" title="Permalink to this headline">¶</a></h1>
+<p>In Scratch, sprites have one or more costumes. The option to change costumes gives us the opportunity to create interesting programs and animations. For this purpose, we use the blocks from the category <strong>Looks</strong>.</p>
+<div class="section" id="thinking-speaking-changing-sizes-changing-costumes">
+<h2>Thinking, speaking, changing sizes, changing costumes<a class="headerlink" href="#thinking-speaking-changing-sizes-changing-costumes" title="Permalink to this headline">¶</a></h2>
+<p>We will create a program called Farm, which has two sprites - a girl Avery and a Chick. We will place them in the environment of a farm (backdrop Farm). We will put the chick in the girl’s hand. The girl will “feed” the chick and watch it grow.</p>
+<a class="reference internal image-reference" href="_images/Farma.png"><img alt="_images/Farma.png" class="align-center" src="_images/Farma.png" style="width: 900px;" /></a>
+<p>We will start with the girl’s script. For the girl, we want:</p>
+<ol class="arabic simple">
+<li><p>Her size to be 50% larger than the original size (150%);</p></li>
+<li><p>Her to think “So cute…”</p></li>
+<li><p>Her to say, “Go, go!”</p></li>
+</ol>
+<p>We will put the chick in her hand. For the chick, we want:</p>
+<ol class="arabic simple">
+<li><p>Its size to be 50% smaller than the original size (50%);</p></li>
+<li><p>It to simulate a pecking motion;</p></li>
+<li><p>Its size to increase during the running of the program.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/KodFarma.png"><img alt="_images/KodFarma.png" class="align-center" src="_images/KodFarma.png" style="width: 1200px;" /></a>
+
+    <div data-component="reveal" id="sakrivanjeFarma"   data-showtitle="Watch the video guide for creating the program Farm" data-hidetitle="Hide the video guide">
+    <p><strong>Watch the process of creating the program, which allows the sprites to think, speak, and change their size and costumes:</strong></p>
+
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+    <div id="VIDEO1_vid"></div>
+    </div>
+    <script id="VIDEO1_script">
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var ytScriptTag = document.getElementById('VIDEO1_script');
+      ytScriptTag.parentNode.insertBefore(tag, ytScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('VIDEO1_vid', {
+          height: '415',
+          width: '735',
+          videoId: 'VIDEO1',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+    </script>
+    
+    </div>
+    <p>As you can see, we used several blocks from the category <strong>Looks</strong> to create our program Farm:</p>
+<ul class="simple">
+<li><p>We adjusted the size of the sprites by using the block <img alt="Size" src="_images/Size.png" />;</p></li>
+<li><p>We changed the size of the sprites by using the block <img alt="SizeBy" src="_images/SizeBy.png" />;</p></li>
+<li><p>We displayed sprite’s thoughts by using the block <img alt="Think2s" src="_images/Think2s.png" />;</p></li>
+<li><p>We displayed sprite’s speech by using the block <img alt="Say2s" src="_images/Say2s.png" />;</p></li>
+<li><p>We changed sprite’s costumes by using the block <img alt="Switch" src="_images/Switch.png" />.</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Blocks.html">Blocks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Blocks.html#types-of-blocks-in-scratch">Types of Blocks in Scratch</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Looks.html">Looks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Looks.html#thinking-speaking-changing-sizes-changing-costumes">Thinking, speaking, changing sizes, changing costumes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Sound.html">Sound</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Sound.html#sprite-sounds">Sprite Sounds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Sound.html#composing-music">Composing music</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Motion.html">Motion</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Motion.html#blocks-for-absolute-motion">Blocks for absolute motion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Motion.html#blocks-for-relative-motion">Blocks for relative motion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Motion.html#other-motion-blocks">Other motion blocks</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Drawing.html">Drawing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Drawing.html#freehand-drawing">“Freehand” Drawing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Drawing.html#controlling-the-movement-of-the-sprite-by-using-the-keyboard-and-drawing">Controlling the movement of the sprite by using the keyboard and drawing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Drawing.html#absolute-movement-and-drawing">Absolute movement and drawing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Drawing.html#stamp">Stamp</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Procedures.html">Procedures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Procedures.html#broadcasting">Broadcasting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Procedures.html#defining-a-new-procedure">Defining a new procedure</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Variables.html">Variables</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Variables.html#ask-and-wait">Ask and Wait</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Variables.html#creating-variables">Creating Variables</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Repetition.html">Repetition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Repetition.html#the-block-that-repeats-commands-a-specific-number-of-times">The block that repeats commands a specific number of times</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Repetition.html#the-block-that-repeats-commands-an-infinite-number-of-times">The block that repeats commands an infinite number of times</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Repetition.html#the-block-that-repeats-commands-until-a-specific-condition-is-fulfilled">The block that repeats commands until a specific condition is fulfilled</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Branching.html">Branching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lists.html">Lists</a></li>
-</ul>
-</div>
-</div></blockquote>
+<p>In addition to everything mentioned above, the block <img alt="Repeat10" src="_images/Repeat10.png" /> was crucial for the proper functioning of our program. Repetition is a powerful concept because it makes the code shorter, clearer, and easier to debug. By using repetition, we allowed the chick to “move”, i.e. we ensured the repetition of the command that changes the costume. The repetition blocks are located in the category <strong>Control</strong>. This category contains important blocks used for controlling the flow of the program.</p>
+<p><img alt="Uradi" src="_images/Uradi.png" /> Create a program, which will simulate the functioning of a traffic light. <strong>Little help</strong>: The lights on a traffic light do not change at the same speed. Red and green lights stay on longer than the yellow.</p>
+
+    <div data-component="reveal" id="sakrivanjeSemafor"   data-showtitle="Watch the video guide for creating the program Traffic light" data-hidetitle="Hide the video guide">
+    <p><strong>Watch the process of creating the program, which allows you to simulate the functioning of a traffic light:</strong></p>
+
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+    <div id="VIDEO2_vid"></div>
+    </div>
+    <script id="VIDEO2_script">
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var ytScriptTag = document.getElementById('VIDEO2_script');
+      ytScriptTag.parentNode.insertBefore(tag, ytScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('VIDEO2_vid', {
+          height: '415',
+          width: '735',
+          videoId: 'VIDEO2',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+    </script>
+    
+    </div>
+    
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="IZadatak1">
+            <p>Q-4: We draw your attention to the existence of blocks that execute similar commands to the ones we have presented in this lesson. For example, the block <img alt="Say" src="_images/Say1.png" /> ensures that sprite’s speech does not disappear from the stage. We assume that you can conclude what is the purpose of the block <img alt="Think" src="_images/Think.png" />.</p>
+
+            <li data-component="answer" data-correct id="IZadatak1_opt_a">It ensures that sprite's thoughts remain on the stage.</li><li data-component="feedback" id="IZadatak1_opt_a">You're absolutely right!</li>
+            
+            <li data-component="answer"  id="IZadatak1_opt_b">It ensures that sprite's thoughts change constantly.</li><li data-component="feedback" id="IZadatak1_opt_b">To enable the thoughts to change constantly, you need to use the appropriate block for repeating the command for displaying sprite's thoughts.</li>
+            
+
+            </ul>
+            </div>
+            <p>In addition to the above, the category <strong>Looks</strong> contains several other blocks.</p>
+<p>The same way we can choose sprite’s costumes, we can also choose the stage backdrop by using the block <img alt="SwBcdrop" src="_images/SwBcdrop.png" />.</p>
+<p>The blocks that allow us to show <img alt="Show" src="_images/Show.png" /> or hide <img alt="Hide" src="_images/Hide.png" /> a sprite are also very useful. We will use these blocks in the following lessons.</p>
+<p>We will let you discover for yourself how you can play with the color and look of your sprite by using blocks for changing the color or effect (<em>change…</em>), setting the color or effect (<em>set…</em>), as well as for deleting all graphic effects (<em>clear graphic effects</em>):</p>
+<img alt="_images/Color.png" class="align-center" src="_images/Color.png" />
 </div>
 </div>
 
@@ -275,13 +319,17 @@ is licensed under the
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-next" title='Next chapter - Visual Programming Language Scratch' data-toggle="tooltip"><a href="Scratch.html">Next chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Blocks' data-toggle="tooltip"><a href="Blocks.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Sound' data-toggle="tooltip"><a href="Sound.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Blocks' data-toggle="tooltip"><a href="Blocks.html">Претходно поглавље</a></li> -->
+    <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Visual Programming Language Scratch' data-toggle="tooltip"><a href="Scratch.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Sound' data-toggle="tooltip"><a href="Sound.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 
