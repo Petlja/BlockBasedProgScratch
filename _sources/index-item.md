@@ -1,5 +1,5 @@
 ---
-title: Block-based Programming in Scratch - Practice Lessons
+title: Block-based Programming in Scratch
 author: Katarina Aleksić
 thumb: media/scratch.png
 ---
