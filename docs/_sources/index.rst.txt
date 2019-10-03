@@ -1,6 +1,6 @@
-=========================================
-Programming in Scratch - Basic Concepts
-=========================================
+==================================
+Block-based programming in Scratch
+==================================
 
 This interactive guide will help you master the basics of programming in the visual programming language Scratch. 
 
